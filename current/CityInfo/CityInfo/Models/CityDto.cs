@@ -15,7 +15,5 @@ namespace CityInfo.Models
                 return PointsOfInterest.Count;
             }
         }
-
-        
     }
 }
