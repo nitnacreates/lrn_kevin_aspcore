@@ -46,6 +46,7 @@ namespace CityInfo.Controllers
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
+        [HttpPost("authenticate")]
         public ActionResult<string> Authenticate(AuthenticationRequestBody authenticationRequestBody)
         {
             // Step 1: validate the username/password
